@@ -3,7 +3,7 @@ def make_line(size):
     line = ""
     for i in range(size):
         line += '#'
-    return line.strip()
+    return line
 
 print(make_line(5))
 
@@ -12,8 +12,8 @@ print(make_line(5))
 def make_square(size):
     square = ""
     for i in range(size):
-        square += make_line(size) + "\n"
-    return square.strip() #removes trailing newline
+        square += (make_line(size) + "\n")
+    return square 
         
 print(make_square(5))
 
@@ -23,8 +23,10 @@ def make_rectangle(width, height):
     for i in range(height):
         rectangle += (make_line(width) + "\n")
     return rectangle.strip()
+
 print(make_rectangle(5,3))
 
+def make_square
 
 
 # Part 2 A -- Make a Stairs
@@ -41,11 +43,10 @@ print(make_downward_stairs(5))
 
 # Part 2 B -- Make Space-Line 
 def make_space_line(numSpaces, numChars):
- 
 
 
 
-print(make_space_line(3,5))
+# print(make_space_line(3,5))
 
 
 
